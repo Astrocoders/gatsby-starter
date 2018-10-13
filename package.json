@@ -25,6 +25,7 @@
     "build": "gatsby build",
     "clean": "rm -rf .cache && rm -rf public",
     "dev": "gatsby develop --open",
+    "lint:staged": "lint-staged",
     "test": "jest",
     "test-coverage": "jest --coverage"
   },
