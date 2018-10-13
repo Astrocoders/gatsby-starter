@@ -3,8 +3,6 @@ import styled from 'styled-components'
 
 import Logo from '../components/Logo'
 
-import '../assets/index.css'
-
 const Header = styled.header`
   align-items: center;
   background-color: #282c34;
@@ -21,7 +19,7 @@ const Home = () => (
     <Header data-testid="HeaderWrapper">
       <Logo />
       <p data-testid="HeaderTitle">
-        Astrocoders CRA boilerplate
+        Astrocoders Gatsby boilerplate
       </p>
     </Header>
   </React.Fragment>
