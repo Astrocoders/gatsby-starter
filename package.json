@@ -37,7 +37,7 @@
   "pre-commit": "lint:staged",
   "jest": {
     "transform": {
-      ".(js|jsx)": "babel-jest"
+      "^.+\\.jsx?$": "babel-jest"
     },
     "testRegex": "(\\.(test|spec))\\.(jsx|js)$",
     "testPathIgnorePatterns": [
@@ -63,6 +63,8 @@
     "testURL": "http://localhost"
   },
   "devDependencies": {
+    "babel-core": "^7.0.0-bridge",
+    "babel-jest": "^23.6.0",
     "babel-plugin-styled-components": "^1.8.0",
     "babel-plugin-syntax-class-properties": "^6.13.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
