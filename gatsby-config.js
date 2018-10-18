@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Astrocoders Gatsby Starter`
+    title: `Astrocoders Gatsby Starter`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi condimentum eros ut ex ornare, dignissim congue diam ullamcorper. Pellentesque ultrices magna consectetur velit feugiat semper.`,
   },
   plugins: [
     {
@@ -20,7 +21,7 @@ module.exports = {
         background_color: '#fff',
         theme_color: '#835FE2',
         display: 'minimal-ui',
-        icon: 'src/assets/gatsby-icon.png',
+        icon: 'src/images/gatsby-icon.png',
       },
     },
     {

@@ -3,19 +3,18 @@
   "version": "1.0.0",
   "author": "Astrocoders <hello@astrocoders.com>",
   "dependencies": {
-    "gatsby": "^1.9.145",
-    "gatsby-link": "^1.6.32",
+    "gatsby": "^2.0.0",
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-manifest": "^1.0.27",
     "gatsby-plugin-nprogress": "^1.0.14",
     "gatsby-plugin-offline": "^1.0.18",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-plugin-styled-components": "^2.0.11",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-styled-components": "^3.0.0",
     "jest-dom": "^2.0.5",
     "jest-fetch-mock": "^1.6.6",
     "jest-localstorage-mock": "^2.2.0",
     "react-helmet": "^5.2.0",
-    "styled-components": "^3.4.6"
+    "styled-components": "^3.4.9"
   },
   "keywords": [
     "gatsby"
@@ -36,20 +35,6 @@
     ]
   },
   "pre-commit": "lint:staged",
-  "babel": {
-    "env": {
-      "test": {
-        "presets": [
-          "es2015",
-          "react"
-        ],
-        "plugins": [
-          "syntax-class-properties",
-          "transform-class-properties"
-        ]
-      }
-    }
-  },
   "jest": {
     "transform": {
       ".(js|jsx)": "babel-jest"
@@ -78,7 +63,7 @@
     "testURL": "http://localhost"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.5.1",
+    "babel-plugin-styled-components": "^1.8.0",
     "babel-plugin-syntax-class-properties": "^6.13.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "enzyme": "^3.2.0",
