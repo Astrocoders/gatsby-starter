@@ -1,32 +1,19 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 
-import '../utils/layout.css'
+import Header from './Header'
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query Layout {
-        site {
-          siteMetadata {
-            title
-            description
-          }
-        }
-      }
-    `}
-    render={({ site: { siteMetadata: data } }) => (
-      <main>
-        <Helmet>
-          <title>{data.title}</title>
-          <meta name="description" content={data.description} />
-          <meta name="viewport" content="width=device-width, maximum-scale=1" />
-        </Helmet>
-        {children}
-      </main>
-    )}
-  />
+import '../css/layout.css'
+
+const Layout = ({ children, data }) => (
+  <React.Fragment>
+    <Header data={data} />
+    <main>{children}</main>
+  </React.Fragment>
 )
+
+Layout.propTypes = {
+  children: PropTypes.func,
+}
 
 export default Layout
