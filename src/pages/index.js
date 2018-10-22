@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Layout from '../components/Layout'
 import Logo from '../components/Logo'
 
 const Header = styled.header`
@@ -15,14 +16,12 @@ const Header = styled.header`
 `
 
 const Home = () => (
-  <React.Fragment>
+  <Layout>
     <Header data-testid="HeaderWrapper">
       <Logo />
-      <p data-testid="HeaderTitle">
-        Astrocoders Gatsby boilerplate
-      </p>
+      <p data-testid="HeaderTitle">Astrocoders Gatsby boilerplate</p>
     </Header>
-  </React.Fragment>
+  </Layout>
 )
 
 export default Home
